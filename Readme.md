@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Petr Ledomskiy](https://up.htmlacademy.ru/htmlcss/20/user/563961).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Рожков](https://htmlacademy.ru/profile/id47370).
 
 ---
 
