@@ -30,22 +30,8 @@
         <a class="cart-link" href="cart.html">2 товара</a>
       </nav>
       <section class="contacts">
-        <p>С 10 до 20, ежедневно<br>8 812 450-25-25</p>
+        <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
       </section>
-
-      <nav class="breadcrumbs">
-        <ul class="breadcrumbs-list">
-          <li class="breadcrumbs-item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a href="#">Каталог</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a>Сливочное</a>
-          </li>
-        </ul>
-      </nav>
 
       <section class="search">
         <!-- Форма -->
@@ -63,6 +49,7 @@
         <table class="cart-items-table">
           <thead>
             <tr>
+              <th>Действие</th>
               <th>Наименование</th>
               <th>Количество</th>
               <th>Стоимость</th>
@@ -70,17 +57,19 @@
           </thead>
           <tbody>
             <tr>
+              <td><button type="button">Удалить</button></td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1,5 кг х 200 руб</td>
               <td>300 руб.</td>
             </tr>
             <tr>
+              <td><button type="button">Удалить</button></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1,5 кг х 300 руб.</td>
               <td>450 руб.</td>
             </tr>
             <tr>
-              <td colspan="3">Итого: 750 руб.</td>
+              <td colspan="4">Итого: 750 руб.</td>
             </tr>
           </tbody>
         </table>
@@ -89,10 +78,26 @@
     </header>
 
     <main class="container">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a>Сливочное</a>
+          </li>
+        </ul>
+      </nav>
+
       <h1>Сливочное мороженое</h1>
+
       <aside class="filters">
         <!-- Форма фильтров -->
       </aside>
+
       <section class="products">
         <h2 class="visually-hidden">Вкусняшки для Вас</h2>
         <ul class="product-list">
@@ -172,11 +177,13 @@
         <nav class="product-paginator">
           <span class="visually-hidden">Страница:</span>
           <ul class="paginator-page-list">
+            <li class="paginator-page"><a href="#">Назад</a></li>
             <li class="paginator-page active"><a>1</a></li>
             <li class="paginator-page"><a href="#">2</a></li>
             <li class="paginator-page"><a href="#">3</a></li>
             <li class="paginator-page"><a href="#">4</a></li>
             <li class="paginator-page"><a href="#">5</a></li>
+            <li class="paginator-page"><a href="#">Вперед</a></li>
           </ul>
         </nav>
       </section>
