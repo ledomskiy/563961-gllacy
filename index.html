@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -30,16 +31,32 @@
         <a class="cart-link" href="cart.html">Пусто</a>
       </nav>
       <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
         <p>С 10 до 20, ежедневно 8 812 450-25-25</p>
       </section>
 
       <section class="search">
-        <!-- Форма -->
+        <h2 class="visually-hidden">Поиск</h2>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="search-string">Что ищем?</label>
+          <input class="search-string" type="text" id="search-string" name="search-string" placeholder="Что ищем?">
+          <button class="visually-hidden" type="submit">Найти</button>
+        </form>
       </section>
 
       <section class="auth">
         <h2 class="visually-hidden">Авторизация</h2>
-        <!-- Форма авторизации -->
+        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            <label class="visually-hidden" for="auth-email">Электронная почта</label>
+            <input type="email" id="auth-email" name="auth-email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="auth-password">Пароль</label>
+            <input type="password" id="auth-password" name="auth-password" placeholder="Пароль">
+          </p>
+          <button type="submit">Войти</button>
+        </form>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
       </section>
@@ -148,11 +165,15 @@
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Форма -->
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+          <input type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта">
+          <button type="submit">Отправить</button>
+        </form>
       </section>
 
       <section class="address">
-        <h2 class="visually-hidden">Адрес</h2>
+        <h2 class="visually-hidden">Наше расположение</h2>
         <img src="img/map.png" width="1200" height="430" alt="Карта">
         <div class="address-and-contacts">
           <p>Адрес главного офиса и офлайн-магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
@@ -184,16 +205,32 @@
       </section>
 
       <section class="development">
+        <h2 class="visually-hidden">Информация о разработчике</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" aria-label="Разработчик: HTML Academy">
         </a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
       </section>
     </footer>
 
     <section class="feedback">
-      <h2>Мы обязательно вам ответим!</h2>
-      <!-- Форма обратной связи -->
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p>Мы обязательно вам ответим!</p>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="visually-hidden" for="feedback-name">Как вас зовут</label>
+          <input type="text" id="feedback-name" name="feedback-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-email">Почта для ответа</label>
+          <input type="email" id="feedback-email" name="feedback-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <label class="visually-hidden" for="feedback-message">Сообщение</label>
+          <textarea id="feedback-message" name="feedback-message" rows="5" placeholder="Напишите что-нибудь..."></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
