@@ -25,3 +25,72 @@ body {
 a {
   text-decoration: none;
 }
+
+.main-navigation a {
+  color: white;
+}
+
+.main-navigation {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.catalog,
+.search,
+.auth,
+.cart-items,
+.feedback {
+  background-color: #f8f7f4;
+  color: #323232;
+}
+
+.catalog {
+  list-style: none;
+}
+
+.catalog a {
+  display: block;
+  color: #323232;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.catalog a:hover {
+  background-color: #f7dbd4;
+}
+
+.catalog a:active {
+  background-color: #f6b5a5;
+}
+
+.catalog > .current > a {
+  background-color: #d47c66;
+  color: white;
+}
+
+.actions-navigation a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.contacts p {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.contacts .phone {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.auth a {
+  text-decoration: underline;
+}
