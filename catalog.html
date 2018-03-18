@@ -8,8 +8,8 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo-gllacy.svg" width="154" height="64" alt="Лого" aria-label="Перейти на главную страницу">
+        <a class="main-header-logo" href="index.html" aria-label="Перейти на главную страницу">
+          <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глейси">
         </a>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог</a>
@@ -115,7 +115,7 @@
         <h2 class="visually-hidden">Параметры поиска</h2>
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
-            <h3><label class="filter-label" for="filter-sorting">Сортировка:</label></h3>
+            <label class="filter-label" for="filter-sorting">Сортировка:</label>
             <select id="filter-sorting" name="filters-sorting">
               <option value="by-popularity" selected>по популярности</option>
               <option value="cost-asc">сначала недорогие</option>
@@ -124,7 +124,11 @@
             </select>
           </div>
           <fieldset>
-            <legend class="filter-label">Цена: 100 руб. – 500 руб.</legend>
+            <legend class="filter-label">Цена:</legend>
+            <p>
+              <output name="filter-cost-min-value">100</output> руб. –
+              <output name="filter-cost-max-value">500</output> руб.
+            </p>
             <span>
               <label class="visually-hidden" for="filter-cost-min">Цена от:</label>
               <input type="range" id="filter-cost-min" name="filter-cost-min" value="100" min="0" max="800" step="50">
@@ -138,19 +142,24 @@
             <legend class="filter-label">Жирность:</legend>
             <ul>
               <li>
-                <label><input type="radio" id="filter-fat-zero" name="filter-fat" value="zero">0%</label>
+                <label>
+                  <input type="radio" id="filter-fat-zero" name="filter-fat" value="zero">0%
+                </label>
               </li>
               <li>
-                <label for="filter-fat-less-10">до 10%</label>
-                <input type="radio" id="filter-fat-less-10" name="filter-fat" value="less-10">
+                <label>
+                  <input type="radio" id="filter-fat-less-10" name="filter-fat" value="less-10">до 10%
+                </label>
               </li>
               <li>
-                <label for="filter-fat-less-30">до 30%</label>
-                <input type="radio" id="filter-fat-less-30" name="filter-fat" value="less-30">
+                <label>
+                  <input type="radio" id="filter-fat-less-30" name="filter-fat" value="less-30">до 30%
+                </label>
               </li>
               <li>
-                <label for="filter-fat-greater-30">выше 30%</label>
-                <input type="radio" id="filter-fat-greater-30" name="filter-fat" value="greater-30">
+                <label>
+                  <input type="radio" id="filter-fat-greater-30" name="filter-fat" value="greater-30">выше 30%
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -159,27 +168,27 @@
             <ul>
               <li>
                 <label>
-                  <input class="checkbox" type="checkbox" name="filter-filler-chocolate" checked>шоколадные
+                  <input class="checkbox" type="checkbox" name="filter-filler" value="chocolate" checked>шоколадные
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="checkbox" type="checkbox" name="filter-filler-sugar-powder" checked>сахарные присыпки
+                  <input class="checkbox" type="checkbox" name="filter-filler" value="sugar-powder" checked>сахарные присыпки
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="checkbox" type="checkbox" name="filter-filler-fruits">фрукты
+                  <input class="checkbox" type="checkbox" name="filter-filler" value="fruits">фрукты
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="checkbox" type="checkbox" name="filter-filler-syrups">сиропы
+                  <input class="checkbox" type="checkbox" name="filter-filler" value="syrups">сиропы
                 </label>
               </li>
               <li>
                 <label>
-                  <input class="checkbox" type="checkbox" name="filter-filler-jams">джемы
+                  <input class="checkbox" type="checkbox" name="filter-filler" value="jams">джемы
                 </label>
               </li>
             </ul>
@@ -302,10 +311,10 @@
 
       <section class="development">
         <h2 class="visually-hidden">Информация о разработчике</h2>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy" aria-label="Разработчик: HTML Academy">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">
+          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="HTML Academy">
         </a>
-        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Профессиональный HTML и CSS, уровень 1">HTML Academy</a> © 2017</p>
       </section>
     </footer>
   </body>
