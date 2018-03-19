@@ -120,7 +120,7 @@
         <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
             <label class="filter-label" for="filter-sorting">Сортировка:</label>
-            <select id="filter-sorting" name="filters-sorting">
+            <select class="filter-inputs filter-input" id="filter-sorting" name="filters-sorting">
               <option value="by-popularity" selected>по популярности</option>
               <option value="cost-asc">сначала недорогие</option>
               <option value="cost-desc">сначала дорогие</option>
@@ -129,39 +129,41 @@
           </div>
           <fieldset>
             <legend class="filter-label">Цена:</legend>
-            <p>
+            <p class="filter-label">
               <output name="filter-cost-min-value">100</output> руб. –
               <output name="filter-cost-max-value">500</output> руб.
             </p>
-            <span>
-              <label class="visually-hidden" for="filter-cost-min">Цена от:</label>
-              <input type="range" id="filter-cost-min" name="filter-cost-min" value="100" min="0" max="800" step="50">
-            </span>
-            <span>
-              <label class="visually-hidden" for="filter-cost-max">Цена до:</label>
-              <input type="range" id="filter-cost-max" name="filter-cost-max" value="500" min="50" max="800" step="50">
-            </span>
+            <div class="filter-inputs">
+              <span class="filter-input">
+                <label class="visually-hidden" for="filter-cost-min">Цена от:</label>
+                <input type="range" id="filter-cost-min" name="filter-cost-min" value="100" min="0" max="800" step="50">
+              </span>
+              <span class="filter-input">
+                <label class="visually-hidden" for="filter-cost-max">Цена до:</label>
+                <input type="range" id="filter-cost-max" name="filter-cost-max" value="500" min="50" max="800" step="50">
+              </span>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="filter-label">Жирность:</legend>
-            <ul>
+            <ul class="filter-inputs">
               <li>
-                <label>
+                <label class="filter-input">
                   <input type="radio" id="filter-fat-zero" name="filter-fat" value="zero">0%
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input type="radio" id="filter-fat-less-10" name="filter-fat" value="less-10">до 10%
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input type="radio" id="filter-fat-less-30" name="filter-fat" value="less-30">до 30%
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input type="radio" id="filter-fat-greater-30" name="filter-fat" value="greater-30">выше 30%
                 </label>
               </li>
@@ -169,35 +171,35 @@
           </fieldset>
           <fieldset>
             <legend class="filter-label">Наполнители:</legend>
-            <ul>
+            <ul class="filter-inputs">
               <li>
-                <label>
+                <label class="filter-input">
                   <input class="checkbox" type="checkbox" name="filter-filler" value="chocolate" checked>шоколадные
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input class="checkbox" type="checkbox" name="filter-filler" value="sugar-powder" checked>сахарные присыпки
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input class="checkbox" type="checkbox" name="filter-filler" value="fruits">фрукты
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input class="checkbox" type="checkbox" name="filter-filler" value="syrups">сиропы
                 </label>
               </li>
               <li>
-                <label>
+                <label class="filter-input">
                   <input class="checkbox" type="checkbox" name="filter-filler" value="jams">джемы
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Применить</button>
+          <button class="button-secondary" type="submit">Применить</button>
         </form>
       </aside>
 

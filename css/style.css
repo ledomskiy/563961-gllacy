@@ -391,3 +391,77 @@ button.button-primary {
 .cart-items-table .total {
   font-weight: 700;
 }
+
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+.breadcrumbs-list a {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.filter-form ul {
+  list-style: none;
+}
+
+.filter-form li {
+  display: inline-block;
+}
+
+.filter-form .filter-label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-form .filter-inputs {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-form select {
+  font-family: inherit;
+  color: white;
+}
+
+.filter-input:hover {
+  color: #323232;
+}
+
+.filter-form option {
+  color: #323232;
+}
+
+.button-secondary {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  border-style: solid;
+  border-width: 2px;
+
+  background-color: rgba(255, 255, 255, 0.188);
+  color: white;
+}
+
+.button-secondary:hover {
+  background-color: #fbfcfb;
+  color: #323232;
+}
+
+.button-secondary:active {
+  background-color: #eaeaea;
+  color: #323232;
+}
+
+button.button-secondary {
+  font-family: inherit;
+}
