@@ -125,6 +125,13 @@ a {
   color: white;
 }
 
+button.button-primary {
+  font: inherit;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
 
 .actions-slider {
   list-style: none;
@@ -230,5 +237,43 @@ a {
 }
 
 .benefits p {
+  font-weight: 400;
+}
+
+.blog-news {
+  background-image: url("../img/bg-strawberry.jpg");
+  background-repeat: no-repeat;
+  background-color: white;
+  color: #323232;
+}
+
+.blog-news h2 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+
+}
+
+.blog-news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: #323232;
+}
+
+
+.subscribe {
+  background-color: #f8f7f4;
+  color: #5a5a5a;
+}
+
+.subscribe .button-primary {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe input[type="email"] {
+  font: inherit;
   font-weight: 400;
 }
