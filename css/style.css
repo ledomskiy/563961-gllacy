@@ -40,6 +40,16 @@ a {
   list-style: none;
 }
 
+.site-navigation a:hover {
+  background-color: #f7f6f3;
+  color: #333333;
+}
+
+.site-navigation a:active {
+  background-color: #ededed;
+  color: #333333;
+}
+
 .catalog,
 .search,
 .auth,
@@ -69,15 +79,26 @@ a {
   background-color: #f6b5a5;
 }
 
-.catalog > .current > a {
+.current-page > a {
   background-color: #d47c66;
   color: white;
 }
 
+.catalog-item-popular a {
+  font-weight: 700;
+}
+
+
 .actions-navigation a {
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+}
+
+.actions-navigation a:hover {
+  background-color: #f8f7f4;
+  color: #323232;
 }
 
 .contacts p {
