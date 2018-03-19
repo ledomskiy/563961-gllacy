@@ -185,3 +185,29 @@ a {
   background-color: #442a1e;
   background-repeat: no-repeat;
 }
+
+
+.product-list {
+  list-style: none;
+}
+
+.product h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.product p {
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.product .cost {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.product .button-primary {
+  font-size: 18px;
+  line-height: 24px;
+}
