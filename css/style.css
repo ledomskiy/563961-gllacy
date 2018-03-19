@@ -211,3 +211,24 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+
+
+.benefits {
+  background-image: url("../img/bg-waffle.jpg");
+  background-color: #ecdfc3;
+  color: #323232;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.benefits p {
+  font-weight: 400;
+}
