@@ -465,3 +465,26 @@ button.button-primary {
 button.button-secondary {
   font-family: inherit;
 }
+
+
+.paginator-page-list {
+  list-style: none;
+}
+
+.paginator-page {
+  display: inline-block;
+}
+
+.paginator-page a {
+  color: white;
+}
+
+.paginator-page a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.paginator-page + .active a,
+.paginator-page a:active{
+  background: white;
+  color: #353535;
+}
