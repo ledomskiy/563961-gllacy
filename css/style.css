@@ -277,3 +277,34 @@ button.button-primary {
   font: inherit;
   font-weight: 400;
 }
+
+
+.address {
+  background-color: #fefefe;
+  color: #323232;
+}
+
+.address-and-contacts p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.address-and-contacts .legal-address {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address-and-contacts .phone {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.address-and-contacts .work-time {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.address-and-contacts .button-primary {
+  font-size: 18px;
+  line-height: 24px;
+}
