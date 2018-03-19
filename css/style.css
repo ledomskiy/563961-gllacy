@@ -112,6 +112,76 @@ a {
   line-height: 24px;
 }
 
+
 .auth a {
   text-decoration: underline;
+}
+
+
+.button-primary {
+  background-color: #ec593c;
+  background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  color: white;
+}
+
+
+.actions-slider {
+  list-style: none;
+}
+
+.actions-slide {
+  text-align: center;
+}
+
+.actions-slide h3 {
+  font-size: 60px;
+  line-height: 60.35px;
+  font-weight: 700;
+}
+
+.actions-slide .button-primary {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.actions-slider-controls {
+  list-style: none;
+}
+
+.actions-slider-control {
+  display: inline-block;
+}
+
+
+.promo-list {
+  list-style: none;
+}
+
+.promo-item h3 {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promo-item p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.promo-item .button-primary {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.promo-item-raspberry {
+  background-image: url("../img/bg-raspberry.jpg");
+  background-color: #5c0f1f;
+  background-repeat: no-repeat;
+}
+
+.promo-item-chocolate {
+  background-image: url("../img/bg-chocolate.jpg");
+  background-color: #442a1e;
+  background-repeat: no-repeat;
 }
