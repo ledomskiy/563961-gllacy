@@ -59,7 +59,7 @@
             <label class="visually-hidden" for="auth-password">Пароль</label>
             <input type="password" id="auth-password" name="auth-password" placeholder="Пароль">
           </p>
-          <button type="submit">Войти</button>
+          <button class="button-primary" type="submit">Войти</button>
         </form>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
@@ -68,7 +68,7 @@
       <section class="cart-items">
         <h2 class="visually-hidden">Товары корзины</h2>
         <table class="cart-items-table">
-          <thead>
+          <thead class="visually-hidden">
             <tr>
               <th>Действие</th>
               <th>Наименование</th>
@@ -80,21 +80,21 @@
             <tr>
               <td><button type="button">Удалить</button></td>
               <td>Пломбир с апельсиновым джемом</td>
-              <td>1,5 кг х 200 руб</td>
+              <td>1,5 кг х <span class="cost">200 руб.</span></td>
               <td>300 руб.</td>
             </tr>
             <tr>
               <td><button type="button">Удалить</button></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-              <td>1,5 кг х 300 руб.</td>
+              <td>1,5 кг х <span class="cost">300 руб.</span></td>
               <td>450 руб.</td>
             </tr>
             <tr>
-              <td colspan="4">Итого: 750 руб.</td>
+              <td class="total" colspan="4">Итого: 750 руб.</td>
             </tr>
           </tbody>
         </table>
-        <a href="#">Оформить заказ</a>
+        <a class="button-primary" href="#">Оформить заказ</a>
       </section>
     </header>
 
