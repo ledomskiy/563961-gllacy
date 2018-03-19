@@ -308,3 +308,34 @@ button.button-primary {
   font-size: 18px;
   line-height: 24px;
 }
+
+
+.info-list,
+.social-list{
+  list-style: none;
+}
+
+.social-btn a,
+.info-item a {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: white;
+}
+
+.info-item-bold a {
+  font-weight: 700;
+}
+
+
+.development p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.development a {
+  color: white;
+  text-decoration: underline;
+}
