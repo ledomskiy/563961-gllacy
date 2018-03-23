@@ -7,25 +7,27 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="main-header">
+  <body class="container">
+    <header class="main-header container-margin">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глейси">
-        </a>
-        <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a>
-            <ul class="catalog">
-              <li class="catalog-item-popular"><a href="#">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li class="site-navigation-item"><a href="delivery-and-pay.html">Доставка и оплата</a></li>
-          <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
-        </ul>
+        <div class="logo-and-site-navigation">
+          <a class="main-header-logo">
+            <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип Глейси">
+          </a>
+          <ul class="site-navigation">
+            <li class="site-navigation-item"><a href="catalog.html">Каталог</a>
+              <ul class="catalog">
+                <li class="catalog-item-popular"><a href="#">Новинки</a></li>
+                <li><a href="catalog.html">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лед</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li class="site-navigation-item"><a href="delivery-and-pay.html">Доставка и оплата</a></li>
+            <li class="site-navigation-item"><a href="about.html">О Компании</a></li>
+          </ul>
+        </div>
         <div class="actions-navigation">
           <a class="search-link" href="search.html">Поиск</a>
           <ul class="user-navigation">
@@ -36,7 +38,7 @@
       </nav>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <p>С 10 до 20, ежедневно <span class="phone">8 812 450-25-25</span></p>
+        <p>С 10 до 20, ежедневно <span class="phone">8&nbsp;812&nbsp;450-25-25</span></p>
       </section>
 
       <section class="search modal">
@@ -65,10 +67,10 @@
         <a class="link-black" href="#">Новая регистрация</a>
       </section>
     </header>
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Магазин Глэйси</h1>
 
-      <section class="actions">
+      <section class="actions container-margin">
         <h2 class="visually-hidden">Двойное мороженое</h2>
         <ul class="actions-slider">
           <li class="actions-slide actions-slide-1">
@@ -97,7 +99,7 @@
         </ul>
       </section>
 
-      <section class="promo">
+      <section class="promo container-margin">
         <h2 class="visually-hidden">Промо-акции</h2>
         <ul class="promo-list">
           <li class="promo-item promo-item-raspberry">
@@ -113,7 +115,7 @@
         </ul>
       </section>
 
-      <section class="popular">
+      <section class="popular container-margin">
         <h2>Хиты продаж</h2>
         <ul class="product-list">
           <li class="product">
@@ -143,7 +145,7 @@
         </ul>
       </section>
 
-      <article class="benefits">
+      <article class="benefits container-margin">
         <h2>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h2>
         <ul class="benefits-list">
           <li class="benefits-item benefits-own-production">
@@ -161,20 +163,22 @@
         </ul>
       </article>
 
-      <section class="blog-news">
-        <h2>Новое в нашем блоге</h2>
-        <a class="link-black" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-      </section>
+      <div class="blog-news-and-subscribe container-margin">
+        <section class="blog-news">
+          <h2>Новое в нашем блоге</h2>
+          <a class="link-black" href="#">10 способов сервировки фруктовых щербетов к столу</a>
+        </section>
 
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
-          <input class="custom-input-text" type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта">
-          <button class="button-primary" type="submit">Отправить</button>
-        </form>
-      </section>
+        <section class="subscribe">
+          <h2 class="visually-hidden">Подписка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">Электронная почта</label>
+            <input class="custom-input-text" type="email" id="subscribe-email" name="subscribe-email" placeholder="Электронная почта">
+            <button class="button-primary" type="submit">Отправить</button>
+          </form>
+        </section>
+      </div>
 
       <section class="address">
         <h2 class="visually-hidden">Наше расположение</h2>
@@ -187,7 +191,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container-margin">
       <section class="social">
         <h2 class="visually-hiddent">Мы в социальных сетях</h2>
         <ul class="social-list">
