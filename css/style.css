@@ -169,6 +169,7 @@ button.button-primary {
 
 
 .modal {
+  display: none;
   background-color: #f8f7f4;
   color: #323232;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
@@ -258,6 +259,8 @@ button.button-primary {
 }
 
 .contacts p {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -268,6 +271,10 @@ button.button-primary {
   line-height: 24px;
 }
 
+
+.actions {
+  margin-bottom: 40px;
+}
 
 .actions-slider {
   list-style: none;
@@ -339,6 +346,10 @@ button.button-primary {
 }
 
 
+.promo {
+  margin-bottom: 40px;
+}
+
 .promo-list {
   list-style: none;
   margin: 0;
@@ -349,9 +360,12 @@ button.button-primary {
 
 .promo-item {
   width: 560px;
+  padding: 20px;
 }
 
 .promo-item h3 {
+  margin: 0;
+  padding: 0;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -375,6 +389,10 @@ button.button-primary {
 }
 
 
+.products {
+  margin-bottom:30px;
+}
+
 .product-list {
   list-style: none;
   margin: 0;
@@ -386,6 +404,7 @@ button.button-primary {
 
 .product {
   width: 267px;
+  padding-bottom: 40px;
 }
 
 .product:hover {
@@ -394,12 +413,16 @@ button.button-primary {
 }
 
 .product h3 {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
 }
 
 .product p {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 45px;
 }
@@ -414,6 +437,8 @@ button.button-primary {
   background-image: url("../img/bg-waffle.jpg");
   background-color: #ecdfc3;
   color: #323232;
+  padding: 30px 20px;
+  margin-bottom: 40px;
 }
 
 .benefits-list {
@@ -421,6 +446,8 @@ button.button-primary {
 }
 
 .benefits h2 {
+  padding: 0;
+  margin: 0;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -432,6 +459,7 @@ button.button-primary {
 
 
 .blog-news-and-subscribe {
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
@@ -541,6 +569,7 @@ button.button-primary {
 
 
 .feedback {
+  display: none;
   width: 377px;
   background-color: #f8f7f4;
   color: #323232;
@@ -574,7 +603,13 @@ button.button-primary {
 }
 
 
+.breadcrumbs {
+  margin-bottom: 10px;
+}
+
 .breadcrumbs-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -588,6 +623,17 @@ button.button-primary {
   font-weight: 400;
 }
 
+
+.page-header {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+
+.filters {
+  margin-bottom: 40px;
+}
 
 .filter-form ul {
   list-style: none;
@@ -655,6 +701,13 @@ button.button-secondary {
   font-family: inherit;
 }
 
+
+.product-paginator {
+  width: 560px;
+  margin-left: auto;
+  margin-top: 40px;
+  text-align: right;
+}
 
 .paginator-page-list {
   list-style: none;
