@@ -18,7 +18,7 @@ body {
   line-height: 22px;
   font-weight: 500;
 
-  background-color: #94aa9e;
+  background-color: #849d8f;
   color: white;
 }
 
@@ -229,7 +229,25 @@ button.button-primary {
 
 .actions-slide {
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
+
+.actions-slide-1 {
+  background-image: url("../img/bg-double-ice-cream-1.jpg");
+  background-color: #849d8f;
+}
+
+.actions-slide-2 {
+  background-image: url("../img/bg-double-ice-cream-2.jpg");
+  background-color: #8996a6;
+}
+
+.actions-slide-3 {
+  background-image: url("../img/bg-double-ice-cream-3.jpg");
+  background-color: #9d8b84;
+}
+
 
 .actions-slide h3 {
   font-size: 60px;
@@ -248,6 +266,24 @@ button.button-primary {
 
 .actions-slider-control {
   display: inline-block;
+}
+
+.actions-slider-control button {
+  background-color: transparent;
+  color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.actions-slider-control button:hover,
+.actions-slider-control button:focus {
+  background-color: rgba(248, 247, 244, 0.4);
+  outline-style: none;
+}
+
+.actions-slider-control.current-slide button,
+.actions-slider-control button:active {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 
